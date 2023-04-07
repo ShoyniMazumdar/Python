@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[35]:
-
-
 import tkinter as tk
 import cv2
 from PIL import Image, ImageTk
@@ -50,16 +47,3 @@ def stop_webcam():
 stop_button = tk.Button(root ,text='Stop Webcam',command = stop_webcam,bg="#3b8686")
 stop_button.pack()
 root.mainloop()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
