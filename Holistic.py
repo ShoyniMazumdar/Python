@@ -22,7 +22,7 @@ while True:
   drawing.draw_landmarks(image, results.face_landmarks,holistic.FACEMESH_CONTOURS)
   drawing.draw_landmarks(image, results.left_hand_landmarks, holistic.HAND_CONNECTIONS)
   drawing.draw_landmarks(image, results.right_hand_landmarks, holistic.HAND_CONNECTIONS)
-  drawing.draw_landmarks(image, results.pose_landmarks, holistic.POSE_CONNECTIONS,connection_drawing_spec=           drawing.DrawingSpec(color=(0, 255, 255),circle_radius=1,thickness=5))
+  drawing.draw_landmarks(image, results.pose_landmarks, holistic.POSE_CONNECTIONS,connection_drawing_spec=drawing.DrawingSpec(color=(0, 255, 255),circle_radius=1,thickness=5))
 
   cv2.imshow("Hand Tracking",image)
   if cv2.waitKey(1) & 0xFF == ord('q'):
@@ -30,10 +30,5 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
-
-
-# In[ ]:
-
-
 
 
